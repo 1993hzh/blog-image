@@ -14,7 +14,6 @@ RUN mkdir /blog
 WORKDIR /blog
 
 RUN apt-get install -y git
-RUN apt-get install -y vim
 
 RUN git clone https://github.com/1993hzh/blogV2.git /blog
 RUN cd /blog && sbt compile
